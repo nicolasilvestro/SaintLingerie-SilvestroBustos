@@ -1,0 +1,269 @@
+* {
+  margin: 0px;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(84%, #000000), to(#3c6d3f));
+  background: linear-gradient(to bottom right, #000000 84%, #3c6d3f 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-style: oblique;
+}
+
+h3 {
+  font-family: 'Viaoda Libre', cursive;
+  color: #1db44a;
+}
+
+section {
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+table {
+  border: 3px solid;
+  -webkit-text-decoration: white;
+          text-decoration: white;
+  margin: auto;
+  display: inline-block;
+}
+
+p {
+  color: whitesmoke;
+  font-family: 'Benne', serif;
+  display: inline-block;
+}
+
+th {
+  background-color: #cccccc;
+  border: 1px solid;
+}
+
+tr, td {
+  border: 1px solid;
+}
+
+.titulo {
+  color: #1db44a;
+}
+
+#main {
+  color: #1db44a;
+  font-family: 'Playfair Display SC', serif;
+  display: inline-block;
+  margin-left: 400px;
+  border: 2px solid;
+}
+
+#pie {
+  color: #dfd7d7;
+  font-family: 'Benne', serif;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+}
+
+.links {
+  font-family: 'Benne', serif;
+  color: #1db44a;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.links .links:visited {
+  color: violet;
+}
+
+.links .links:active {
+  color: black;
+}
+
+.links .links:focus {
+  background: indigo;
+}
+
+.links .links:hover {
+  background: indigo;
+  -webkit-transform: scale(-5, 1.2);
+          transform: scale(-5, 1.2);
+}
+
+a:hover {
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.menu {
+  list-style: none;
+  width: 99%;
+  padding: 6px;
+  margin: 7px;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 50px;
+  text-align: center;
+}
+
+#img {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  opacity: .8;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#img:hover {
+  opacity: 4;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logoImgMobileFirst {
+  display: none;
+}
+
+#mainImg {
+  padding-left: 230px;
+  width: 800px;
+  height: 200px;
+}
+
+#logoImg {
+  padding-left: 200px;
+}
+
+.descripcion {
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr;
+      grid-template-columns: 3fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "section1 aside" "section2 aside" "section3 aside";
+}
+
+.section1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: section1;
+}
+
+.section2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: section2;
+}
+
+.section3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: section3;
+}
+
+aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: aside;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38rem;
+}
+
+.container {
+  position: relative;
+}
+
+.container .container:hover .image {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 2vh;
+  }
+  aside {
+    width: 100%;
+    padding: 1vh;
+  }
+  .grid {
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+        grid-template-areas: "section1" "section2" "section3" "aside";
+  }
+  #mainImg {
+    display: none;
+  }
+  #logoImg2 {
+    display: none;
+  }
+  #logoImg {
+    display: none;
+  }
+  #logoImgMobileFirst {
+    display: block;
+    width: 109px;
+    height: 110%;
+    margin-left: 90px;
+  }
+  .menu {
+    width: 97%;
+  }
+  .menu li {
+    padding: 13px;
+  }
+  #pie {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  #logoImg {
+    display: none;
+  }
+  #logoImg2 {
+    display: none;
+  }
+}
