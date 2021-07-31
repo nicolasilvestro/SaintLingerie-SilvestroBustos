@@ -78,19 +78,15 @@ ul {
   transition: .5s ease-out;
 }
 
-.links .links:visited {
+.links:visited {
   color: violet;
 }
 
-.links .links:active {
-  color: black;
-}
-
-.links .links:focus {
+.links:focus {
   background: indigo;
 }
 
-.links .links:hover {
+.links:hover {
   background: indigo;
   -webkit-transform: scale(-5, 1.2);
           transform: scale(-5, 1.2);
@@ -179,7 +175,9 @@ footer {
       grid-template-columns: 3fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "section1 aside" "section2 aside" "section3 aside";
+      grid-template-areas: "section1 aside"
+ "section2 aside"
+ "section3 aside";
 }
 
 .section1 {
@@ -231,7 +229,10 @@ aside {
   .grid {
     -ms-grid-columns: 4fr;
         grid-template-columns: 4fr;
-        grid-template-areas: "section1" "section2" "section3" "aside";
+        grid-template-areas: "section1"
+ "section2"
+ "section3"
+ "aside";
   }
   #mainImg {
     display: none;
