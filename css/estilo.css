@@ -78,15 +78,15 @@ ul {
   transition: .5s ease-out;
 }
 
-.links .links:visited {
+.links:visited {
   color: #b460b4;
 }
 
-.links .links:focus {
+.links:focus {
   background: indigo;
 }
 
-.links .links:hover {
+.links:hover {
   background: indigo;
   -webkit-transform: scale(-5, 1.2);
           transform: scale(-5, 1.2);

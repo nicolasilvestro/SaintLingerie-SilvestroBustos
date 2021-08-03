@@ -61,21 +61,24 @@ ul{
     text-decoration: none;
     border-radius: 20px;
     transition: .5s ease-out;
-    .links:visited{
+    &:visited{
         color: rgb(180, 96, 180);
     }
-    .links:focus {
+    &:focus {
         background:indigo ;
     }
-    .links:hover {
+    &:hover {
         background:indigo ;
         transform: scale(-5, 1.2);
     }
 }
-a:hover{
-    transition: .5s ease-in;
-    transform: scale(1.2, 1.2);
+a{
+    &:hover{
+        transition: .5s ease-in;
+        transform: scale(1.2, 1.2);
+    }
 }
+
 .menu {
     list-style: none;
     width: 99%;
