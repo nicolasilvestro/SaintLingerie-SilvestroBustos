@@ -109,7 +109,7 @@ a:hover {
 
 .menu li {
   display: inline-block;
-  padding: 50px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -240,9 +240,9 @@ aside {
   }
   #logoImgMobileFirst {
     display: block;
-    width: 109px;
+    width: 150px;
     height: 110%;
-    margin-left: 110px;
+    margin-left: 30%;
   }
   .menu {
     width: 97%;
