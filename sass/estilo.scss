@@ -6,7 +6,7 @@ $fontcolor: #1db44a;
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to bottom right, #000000 84%, #3c6d3f 100%);
+    background: linear-gradient(to bottom left, #000000 84%, #3c6d3f 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
@@ -59,7 +59,8 @@ ul{
     font-family: 'Benne', serif;
     color: $fontcolor;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 15px;
+    border-color: pink;
     transition: .5s ease-out;
     &:visited{
         color: rgb(180, 96, 180);
