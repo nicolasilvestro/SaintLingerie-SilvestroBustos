@@ -68,15 +68,8 @@ ul{
     border-radius: 15px;
     border-color: pink;
     transition: .5s ease-out;
-    &:visited{
-        color: rgb(180, 96, 180);
-    }
     &:focus {
         background:indigo ;
-    }
-    &:hover {
-        background:indigo ;
-        transform: scale(-5, 1.2);
     }
 }
 a{
