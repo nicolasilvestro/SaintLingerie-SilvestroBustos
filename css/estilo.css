@@ -9,6 +9,7 @@ body {
   background: -webkit-gradient(linear, right top, left bottom, color-stop(84%, #000000), to(#3c6d3f));
   background: linear-gradient(to bottom left, #000000 84%, #3c6d3f 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -49,6 +50,18 @@ tr, td {
 
 .titulo {
   color: #1db44a;
+}
+
+.titulo2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #main {
@@ -177,6 +190,36 @@ footer {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: "section1 aside" "section2 aside" "section3 aside";
+}
+
+.grid2 {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "talles1 talles2" "talles3 talles4";
+}
+
+.talles1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: talles1;
+}
+
+.talles2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: talles2;
+}
+
+.talles3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: talles3;
+}
+
+.talles4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: talles4;
 }
 
 .section1 {
